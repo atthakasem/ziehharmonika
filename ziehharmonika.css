@@ -42,16 +42,19 @@
 	bottom: 0;
 	left: 40px;
 	transition: 0.25s all;
+	opacity: 0;
 }
 .ziehharmonika .active .arrowDown {
 	bottom: -13px;
 	border-color: #009641 transparent transparent transparent;
+	opacity: 1;
 }
 .ziehharmonika .collapseIcon {
 	position: absolute;
 	right: 20px;
-	top: 50%;
+	top: 45%;
 	font-size: 25px;
 	font-weight: 300;
-	transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
 }
