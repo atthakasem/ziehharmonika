@@ -56,6 +56,7 @@ $('.ziehharmonika').ziehharmonika({
 |---|---|
 |open|Opens a specific accordion, taking your options into account. Returns the affected element(s).|
 |close|Closes a specific accordion, taking your options into account. Returns the closed element(s) even if the action fails.|
+
 The actions 'closeAll', 'forceClose', and 'forceCloseAll' are too wonky to be listed here. Use with caution.
 
 Usage example:
