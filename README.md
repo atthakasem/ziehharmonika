@@ -3,6 +3,7 @@ A jQuery accordion plugin
 
 ## Include
 ```html
+<!-- Don't forget to include jQuery -->
 <link rel="stylesheet" href="ziehharmonika.css">
 <script src="ziehharmonika.js"></script>
 ```
