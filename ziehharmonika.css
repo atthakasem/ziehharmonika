@@ -21,7 +21,6 @@
 	content: attr(data-prefix);
 	font-size: 18px;
 	margin-right: 9px;
-	vertical-align: middle;
 }
 .ziehharmonika > div {
 	display: none;
