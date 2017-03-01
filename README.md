@@ -15,7 +15,7 @@ A lightweight jQuery accordion plugin. [Demo](http://www.testserver.de/wds_tim/z
 	<div>
 		<!-- Your content -->
 	</div>
-
+	
 	<h3><!-- Your headline --></h3>
 	<div>
 		<!-- Your content -->
