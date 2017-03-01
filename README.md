@@ -52,6 +52,7 @@ $('.ziehharmonika').ziehharmonika({
 });
 ```
 ## Actions
+
 |Action|Description|
 |---|---|
 |open|Opens a specific accordion, taking your options into account. Returns the affected element(s).|
