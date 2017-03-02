@@ -64,3 +64,6 @@ Usage example:
 ```javascript
 $('.ziehharmonika h3:eq(0)').ziehharmonika('open');
 ```
+
+## License
+MIT
