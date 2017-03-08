@@ -22,6 +22,9 @@
 	font-size: 18px;
 	margin-right: 9px;
 }
+.ziehharmonika h3.alignLeft {
+	padding-left: 35px;
+}
 .ziehharmonika > div {
 	display: none;
 	background: #fff;
@@ -56,4 +59,8 @@
 	font-weight: 300;
 	-ms-transform: translate(0, -50%);
 	    transform: translate(0, -50%);
+}
+.ziehharmonika .collapseIcon.alignLeft {
+	right: initial;
+	left: 20px;
 }

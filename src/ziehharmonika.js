@@ -20,7 +20,8 @@
 				collapseIcons: {
 					opened: '&ndash;',
 					closed: '+'
-				}
+				},
+				collapseIconsAlign: 'right'
 			}, actionOrSettings);
 		}
 		// actions
@@ -68,6 +69,11 @@
 					$(this).append('<div class="collapseIcon">'+settings.collapseIcons.closed+'</div>');
 				}
 			});
+		}
+		if (settings.collapseIconsAlign == 'left') {
+			$('.collapseIcon, ' + settings.headline).addClass('alignLeft');
+		} else {
+			console.log(settings.collapseIconsAlign);
 		}
 
 		$(settings.headline, this).click(function() {
