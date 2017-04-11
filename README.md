@@ -40,6 +40,7 @@ Options:
 |headline|string|'h3'|Use a headline tag other than h3. In that case, ddjust or overwrite ziehharmonika.css as well.|
 |collapsibleIcons|json or false|{opened: '&ndash;', closed: '+'}|Opened/closed icon on the right hand side of the headline. May contain image paths.|
 |collapsibleIconsAlign|'left', 'right'|'right'|Align the collapse icon on either side.|
+|scroll|boolean|true|Scrolls to opened accordion element|
 
 Usage example:
 ```javascript
@@ -54,16 +55,16 @@ $('.ziehharmonika').ziehharmonika({
 ```
 ## Actions
 
-|Action|Description|
-|---|---|
-|open|Opens a specific accordion, taking your options into account. Returns the affected element(s).|
-|close|Closes a specific accordion, taking your options into account. Returns the affected element(s) even if the action fails.|
+|Action|Parameters|Description|
+|---|---|---|
+|open|boolean: scroll (optional)|Opens a specific accordion, taking your options into account, and scrolls to it. Returns the affected element(s).|
+|close|N/A|Closes a specific accordion, taking your options into account. Returns the affected element(s) even if the action fails.|
 
 The actions 'closeAll', 'forceClose', and 'forceCloseAll' are too wonky to be listed here. Use with caution.
 
 Usage example:
 ```javascript
-$('.ziehharmonika h3:eq(0)').ziehharmonika('open');
+$('.ziehharmonika h3:eq(0)').ziehharmonika('open', false);
 ```
 
 ## License
