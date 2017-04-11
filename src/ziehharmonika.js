@@ -2,7 +2,7 @@
 
 (function($) {
 	var settings;
-	$.fn.ziehharmonika = function(actionOrSettings) {
+	$.fn.ziehharmonika = function(actionOrSettings, parameter) {
 		if (typeof actionOrSettings === 'object' || actionOrSettings === undefined) {
 			// Default settings:
 			settings = $.extend({
@@ -21,7 +21,10 @@
 					opened: '&ndash;',
 					closed: '+'
 				},
-				collapseIconsAlign: 'right'
+				// Collapse icon left or right
+				collapseIconsAlign: 'right',
+				// Scroll to opened accordion element
+				scroll: true
 			}, actionOrSettings);
 		}
 		// actions
@@ -33,6 +36,10 @@
 			$(this).addClass('active').next('div').slideDown(400, function() {
 				if (settings.collapseIcons) {
 					$('.collapseIcon', ogThis).html(settings.collapseIcons.opened);
+				}
+				// parameter: scroll to opened element
+				if (parameter !== false) {
+					smoothScrollTo($(this).prev(settings.collapseIcons));
 				}
 			});
 			return this;
@@ -72,16 +79,21 @@
 		}
 		if (settings.collapseIconsAlign == 'left') {
 			$('.collapseIcon, ' + settings.headline).addClass('alignLeft');
-		} else {
-			console.log(settings.collapseIconsAlign);
 		}
 
 		$(settings.headline, this).click(function() {
 			if ($(this).hasClass('active')) {
 				$(this).ziehharmonika('close');
 			} else {
-				$(this).ziehharmonika('open');
+				$(this).ziehharmonika('open', settings.scroll);
 			}
 		});
 	};
 }(jQuery));
+
+function smoothScrollTo(element, callback) {
+	var time = 400;
+	$('html, body').animate({
+		scrollTop: $(element).offset().top
+	}, time, callback);
+}
