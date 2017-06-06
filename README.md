@@ -38,7 +38,7 @@ Options:
 |collapsible|boolean|false|Allow or disallow last open accordion to be closed.|
 |prefix|string or false|false|Give headlines a certain prefix, e.g. "♫ My headline".|
 |headline|string|'h3'|Use a headline tag other than h3. In that case, ddjust or overwrite ziehharmonika.css as well.|
-|collapsibleIcons|json or false|{opened: '&ndash;', closed: '+'}|Opened/closed icon on the right hand side of the headline. May contain image paths.|
+|collapseIcons|json or false|{opened: '&ndash;', closed: '+'}|Opened/closed icon on the right hand side of the headline. May contain image paths.|
 |collapsibleIconsAlign|'left', 'right'|'right'|Align the collapse icon on either side.|
 |scroll|boolean|true|Scrolls to opened accordion element|
 
