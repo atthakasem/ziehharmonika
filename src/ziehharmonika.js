@@ -89,11 +89,11 @@
 			}
 		});
 	};
-}(jQuery));
 
-function smoothScrollTo(element, callback) {
-	var time = 400;
-	$('html, body').animate({
-		scrollTop: $(element).offset().top
-	}, time, callback);
-}
+	function smoothScrollTo(element, callback) {
+		var time = 400;
+		$('html, body').animate({
+			scrollTop: $(element).offset().top
+		}, time, callback);
+	}
+}(jQuery));
