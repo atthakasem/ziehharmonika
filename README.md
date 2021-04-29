@@ -1,5 +1,5 @@
 # Ziehharmonika
-A lightweight jQuery accordion plugin. [Demo](http://www.testserver.de/wds_tim/ziehharmonika-demo/)
+A lightweight jQuery accordion plugin. [Demo](https://www.testserver.de/wds_tim/ziehharmonika-demo/)
 
 ## Include
 ```html
